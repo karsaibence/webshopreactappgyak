@@ -1,25 +1,19 @@
-import logo from "./logo.svg"
 import "./App.css"
 import Nav from "./components/nav/Nav"
 import {nav} from "./components/forras/navItems.js"
-import {termekek} from "./components/forras/termekek.js"
-import Kartya from "./components/kartya/Kartya.jsx"
-import Kartyak from "./components/kartyak/Kartyak.jsx"
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Fooldal from "./components/pages/Fooldal.jsx"
+import Kosar from "./components/pages/Kosar.jsx"
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">Karsai Bence</header>
-			<main>
-				<nav>
-					<Nav nav={nav} />
-				</nav>
-				<article>
-					<Kartyak termekek={termekek} />
-				</article>
-				<footer></footer>
-			</main>
-		</div>
+		<Router>
+			<Nav nav={nav} />
+			<Routes>
+        <Route path="/index" element={<Fooldal />} />
+				<Route path="/kosar" element={<Kosar />} />
+			</Routes>
+		</Router>
 	)
 }
 

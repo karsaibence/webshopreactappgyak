@@ -1,11 +1,12 @@
 .card {
 	max-width: 200px;
-	height: 350px;
+	height: 325px;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	border-radius: 10px;
 }
 h4 {
 	margin-block: 5px;
+    text-align: center;
 }
 
 .card-img {

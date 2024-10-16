@@ -4,6 +4,8 @@ ul {
     margin: 0;
     margin-bottom: 3rem;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    align-items: center;
+    text-align: center;
 }
 li {
 	list-style-type: none;
