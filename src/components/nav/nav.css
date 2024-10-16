@@ -1,0 +1,19 @@
+ul {
+    background-color: bisque;
+    padding-block: 1rem;
+    margin: 0;
+    margin-bottom: 3rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+li {
+	list-style-type: none;
+	display: inline;
+	margin-inline: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+}

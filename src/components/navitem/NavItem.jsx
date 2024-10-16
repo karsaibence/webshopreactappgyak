@@ -1,9 +1,9 @@
 import React from 'react'
 
-const NavItem = (props) => {
+const NavItem = ( props ) => {
     return (
-        <li>{props.nev}
-            <a href="props.link"></a>
+        <li>
+            <a href="props.link">{props.nev}</a>
         </li>
     )
 }
