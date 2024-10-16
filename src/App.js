@@ -6,12 +6,17 @@ import Fooldal from "./components/pages/Fooldal.jsx"
 import Kosar from "./components/pages/Kosar.jsx"
 
 function App() {
+	let kosarLista = []
+	function getKosarItems(lista) {
+		kosarLista = lista
+		console.log(kosarLista)
+	}
 	return (
 		<Router>
 			<Nav nav={nav} />
 			<Routes>
-        <Route path="/index" element={<Fooldal />} />
-				<Route path="/kosar" element={<Kosar />} />
+				<Route path="/index" element={<Fooldal fn={getKosarItems} />} />
+				<Route path="/kosar" element={<Kosar kosarLista={kosarLista} />} />
 			</Routes>
 		</Router>
 	)

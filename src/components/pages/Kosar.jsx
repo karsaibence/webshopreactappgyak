@@ -2,7 +2,7 @@ import React from 'react'
 
 const Kosar = () => {
   return (
-    <div>Kosar</div>
+    <div></div>
   )
 }
 

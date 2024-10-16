@@ -2,6 +2,10 @@ import React from 'react'
 import "./kartya.css"
 
 const Kartya = ( props ) => {
+    function clickEvent() { 
+        props.fn( props.index )
+    }
+
     return (
         <div className='card'>
             <div className="card-header">
@@ -13,7 +17,7 @@ const Kartya = ( props ) => {
             <div className="card-description">
                 <p>{props.leiras}</p>
                 <div className='kosarba-tesz'>
-                    <button>Vásárlás</button>
+                    <button onClick={clickEvent}>Vásárlás</button>
                     <h6>Ár: {props.price}Ft</h6>
                 </div>
             </div>
