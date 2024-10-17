@@ -5,6 +5,7 @@ export const termekek = [
 		url: "1.jpg",
 		leiras: "Ez egy cipő. A neve: cipo1",
 		price: 1000,
+		mennyiseg: 1,
 	},
 	{
 		id: 1,
@@ -12,6 +13,7 @@ export const termekek = [
 		url: "2.jpg",
 		leiras: "Ez egy cipő. A neve: cipo2",
 		price: 1500,
+		mennyiseg: 1,
 	},
 	{
 		id: 2,
@@ -19,6 +21,7 @@ export const termekek = [
 		url: "3.jpg",
 		leiras: "Ez egy cipő. A neve: cipo3",
 		price: 2000,
+		mennyiseg: 1,
 	},
 	{
 		id: 3,
@@ -26,6 +29,7 @@ export const termekek = [
 		url: "4.jpg",
 		leiras: "Ez egy cipő. A neve: cipo4",
 		price: 2500,
+		mennyiseg: 1,
 	},
 	{
 		id: 4,
@@ -33,6 +37,7 @@ export const termekek = [
 		url: "5.jpg",
 		leiras: "Ez egy cipő. A neve: cipo5",
 		price: 3000,
+		mennyiseg: 1,
 	},
 	{
 		id: 5,
@@ -40,5 +45,6 @@ export const termekek = [
 		url: "6.jpg",
 		leiras: "Ez egy cipő. A neve: cipo6",
 		price: 3500,
+		mennyiseg: 1,
 	},
 ]

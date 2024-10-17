@@ -1,0 +1,26 @@
+table {
+	border-collapse: collapse;
+	width: 70%;
+	margin-inline: auto;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+td,
+th {
+	border: 1px solid #b0afaf;
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+th p,
+td p {
+	text-align: right;
+	margin: 0;
+}
+th h5,
+td h5 {
+	text-align: center;
+	margin: 0;
+}
