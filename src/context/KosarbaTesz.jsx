@@ -15,7 +15,6 @@ export const KosarProvider = ({ children }) => {
             // Ha már szerepel a kosárban, növeljük a mennyiségét
             setlista(lista.map((e) => (e.id === obj.id ? { ...e, mennyiseg: e.mennyiseg + 1 } : e)))
         }
-        console.log(lista)
     }
 
     function mennycsokkentes(id) {
@@ -42,11 +41,16 @@ export const KosarProvider = ({ children }) => {
             })
         )
     }
+    function kosarMeret() {
+        return lista.reduce((sum, aktualis) => {
+            return sum + aktualis.mennyiseg
+        }, 0)
+    }
 
     return (
         <KosarContext.Provider value={{
             lista,
-            mennyNoveles, mennycsokkentes, getKosarItems
+            mennyNoveles, mennycsokkentes, getKosarItems, kosarMeret
         }}>
             {children}
         </KosarContext.Provider>

@@ -1,16 +1,23 @@
-ul {
+nav {
     background-color: bisque;
-    padding-block: 1rem;
-    margin: 0;
-    margin-bottom: 3rem;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     align-items: center;
     text-align: center;
 }
+
+ul {
+    margin: 0;
+    padding-block: 1rem;
+    margin-bottom: 3rem;
+    margin-inline: auto;
+
+}
+
 li {
-	list-style-type: none;
-	display: inline;
-	margin-inline: 2rem;
+    list-style-type: none;
+    display: inline;
+    margin-inline: 2rem;
+    padding-inline: 10px;
 }
 
 a {
@@ -18,4 +25,41 @@ a {
     color: black;
     font-size: 16px;
     font-weight: bolder;
+}
+
+.kosar {
+    position: relative;
+}
+
+.kosar-meret {
+    text-align: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    right: -5px;
+    top: -5px;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+}
+
+@media (max-width:600px) {
+    li {
+        display: block;
+        margin-block: 1rem;
+        border-bottom: 1px solid grey;
+        padding: 0;
+        margin-inline: 0;
+    }
+
+
+    ul {
+        width: fit-content;
+    }
+
+    .kosar-meret {
+        top: 5px;
+    }
 }
