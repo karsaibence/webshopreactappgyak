@@ -1,6 +1,7 @@
 import React from 'react'
 import Kartyak from '../components/kartyak/Kartyak'
 import { termekek } from '../components/forras/termekek'
+import "./fooldal.css"
 
 
 const Fooldal = () => {
