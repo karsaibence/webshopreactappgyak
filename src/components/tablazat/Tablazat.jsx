@@ -3,13 +3,6 @@ import TablazatSor from '../tablazatsor/TablazatSor'
 import "./tablazat.css"
 
 const Tablazat = ( props ) => {
-    function mennyNoveles( adat ) {
-        props.fnN( adat )
-    }
-    function mennycsokkentes( adat ) {
-        props.fnCs( adat )
-    }
-
     return (
         <table>
             <thead>
@@ -23,7 +16,7 @@ const Tablazat = ( props ) => {
                 {
                     props.lista.map( ( e, i ) => {
                         return <TablazatSor nev={e.name} menny={e.mennyiseg}
-                            ar={e.price} id={e.id} index={i} key={i} fnN={mennyNoveles} fnCs={mennycsokkentes} />
+                            ar={e.price} id={e.id} index={i} key={i} />
                     } )
                 }
             </tbody>

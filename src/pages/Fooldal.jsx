@@ -1,14 +1,12 @@
 import React from 'react'
 import Kartyak from '../components/kartyak/Kartyak'
-import { termekek } from "../components/forras/termekek"
+import { termekek } from '../components/forras/termekek'
 
-const Fooldal = ( props ) => {
-    function clickedEvent( adat ) {
-        props.fn( termekek[ adat ] )
-    }
+
+const Fooldal = () => {
     return (
         <article>
-            <Kartyak termekek={termekek} fn={clickedEvent} />
+            <Kartyak lista={termekek} />
         </article>
     )
 }
