@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import { termekek } from "../components/forras/termekek";
 
 export const KosarContext = createContext("")
 

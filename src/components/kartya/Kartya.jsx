@@ -15,7 +15,7 @@ const Kartya = (props) => {
                 <h4>{props.obj.name}</h4>
             </div>
             <div className="card-img">
-                <img src={"/images/" + props.obj.url} alt={props.obj.name} />
+                <img src={"webshopreactappgyak/forras/" + props.obj.url} alt={props.obj.name} />
             </div>
             <div className="card-description">
                 <p>{props.obj.leiras}</p>

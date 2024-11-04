@@ -1,6 +1,6 @@
 import React from 'react'
 import Kartyak from '../components/kartyak/Kartyak'
-import { termekek } from '../components/forras/termekek'
+import { termekek } from '../termekek'
 import "./fooldal.css"
 
 
