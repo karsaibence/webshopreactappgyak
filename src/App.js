@@ -12,7 +12,7 @@ function App() {
   const { lista } = useContext(KosarContext);
 
   return (
-    <Router basename="webshopreactappgyak">
+    <Router >
       <Nav nav={nav} />
       <Routes>
         <Route path="/" element={<Fooldal />} />
