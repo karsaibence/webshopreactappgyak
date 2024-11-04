@@ -2,7 +2,7 @@ export const nav = [
 	{
 		id: 0,
 		nev: "Termékek",
-		link: "/",
+		link: "index.html",
 	},
 	{
 		id: 1,
