@@ -12,7 +12,6 @@ const Nav = (props) => {
                     })
                 }
             </ul>
-            <div className='kosar-nagysag'></div>
         </nav>
     )
 }

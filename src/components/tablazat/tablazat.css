@@ -1,34 +1,42 @@
+@import url("../../variables.css");
 table {
-	border-collapse: collapse;
-	width: 70%;
-	margin-inline: auto;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	background-color: #eaeaea;
+  border-collapse: collapse;
+  width: 70%;
+  margin-inline: auto;
+  box-shadow: var(--text-border-color) 0px 5px 15px;
+  background-color: var(--card-bg-color);
+  color: var(--text-border-color);
 }
 
-td,
 th {
-	border: 1px solid #b0afaf;
-	text-align: left;
-	padding: 8px;
+  border: 1px solid var(--text-border-color);
+  text-align: left;
+  padding: 8px;
+  background-color: var(--button-bg-color);
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid var(--text-border-color);
 }
 
 tr:nth-child(even) {
-	background-color: #dddddd;
+  background-color: var(--button-bg-color);
 }
 
 th p,
 td p {
-	text-align: right;
-	margin: 0;
+  text-align: right;
+  margin: 0;
 }
 
 th h5,
 td h5 {
-	text-align: center;
-	margin: 0;
+  text-align: center;
+  margin: 0;
 }
 
-table button{
-	margin-inline: 10px;
+table button {
+  margin-inline: 10px;
 }

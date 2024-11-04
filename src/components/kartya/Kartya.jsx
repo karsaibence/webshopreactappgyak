@@ -14,12 +14,10 @@ const Kartya = (props) => {
       <div className="card-header">
         <h4>{props.obj.name}</h4>
       </div>
-      <div className="card-img">
         <img
           src={`${process.env.PUBLIC_URL}/forras/${props.obj.url}`}
           alt={props.obj.name}
         />
-      </div>
       <div className="card-description">
         <p>{props.obj.leiras}</p>
         <div className="kosarba-tesz">

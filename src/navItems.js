@@ -7,16 +7,16 @@ export const nav = [
 	{
 		id: 1,
 		nev: "Boltok",
-		link: "/shops",
+		link: "shops",
 	},
 	{
 		id: 2,
 		nev: "Rólunk",
-		link: "/info",
+		link: "info",
 	},
 	{
 		id: 3,
 		nev: "Kosár",
-		link: "/kosar",
+		link: "kosar",
 	},
 ]
